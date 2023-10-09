@@ -4,7 +4,7 @@ import { Show, Bell, ArrowUp } from "../assets/icons";
 
 export default function NavBar() {
   return (
-    <div className=" flex border sticky top-0 z-50 items-center justify-between ">
+    <div className=" flex border bg-white sticky top-0 z-50 items-center justify-between ">
       <div className=" flex items-center gap-[38px] ">
         <img className=" py-3 pl-10 " src={CompanyLogo} alt="CompanyLogo" />
         <img className="p-[10.5px] border rounded-lg bg-AdminPanel " src={Show} alt="Show" />

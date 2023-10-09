@@ -1,5 +1,4 @@
 import React from "react";
-import { Revenue } from "../../assets/icons";
 
 import { RevenueData } from "./RevenueData";
 export default function RevenueCard() {
@@ -14,7 +13,7 @@ export default function RevenueCard() {
             <div className=" mb-[5px] ">
               <img
                 className=" p-2  bg-LightGrey rounded-lg  "
-                src={Revenue}
+                src={item.image}
                 alt="Revenue"
               />
             </div>

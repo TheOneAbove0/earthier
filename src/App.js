@@ -9,7 +9,10 @@ function App() {
      <NavBar />
      <div className=' flex  '>
      <SideBar />
+     <div className='w-full pl-[210px]'> 
      <HomePage />
+
+     </div>
 
      </div>
     </div>
