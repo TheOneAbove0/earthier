@@ -12,6 +12,7 @@ module.exports = {
         'Tertiary' : '#9A9A9A',
         'Success' : '#24BE67',
         'Danger' : '#EF233C',
+        "ButtonHover": "#1568DE",
 
 
       },

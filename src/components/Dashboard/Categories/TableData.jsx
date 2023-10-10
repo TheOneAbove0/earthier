@@ -1,0 +1,186 @@
+
+import {Avatar} from "../../assets/image/index";
+
+export const TableData = [
+
+    {
+        id:12,
+        Category:'Whiskey',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:540
+    },
+    {
+        id:11,
+        Category:'Beer',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:556
+    },
+    {
+        id:10,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'',
+        Products:740
+    },
+    {
+        id:9,
+        Category:'Wine',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:274
+    },
+    {
+        id:8,
+        Category:'Vodka',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:583
+    },
+    {
+        id:7,
+        Category:'Gin',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:447
+    },
+    {
+        id:6,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:453
+    },
+    {
+        id:5,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:177
+    },
+
+    {
+        id:4,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:647
+    },
+
+    {
+        id:3,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:816
+    },
+
+    {
+        id:2,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:130
+    },
+
+    {
+        id:1,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:600
+    },
+    {
+        id:8,
+        Category:'Vodka',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:583
+    },
+    {
+        id:7,
+        Category:'Gin',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:447
+    },
+    {
+        id:6,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:453
+    },
+    {
+        id:5,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:177
+    },
+
+    {
+        id:4,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:647
+    },
+
+    {
+        id:3,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:816
+    },
+
+    {
+        id:2,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:130
+    },
+
+    {
+        id:1,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:600
+    },
+    
+    {
+        id:4,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:647
+    },
+
+    {
+        id:3,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:816
+    },
+
+    {
+        id:2,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:130
+    },
+
+    {
+        id:1,
+        Category:'Alcohol',
+        image:Avatar,
+        ParentCategory:'Alcohol',
+        Products:600
+    },
+]

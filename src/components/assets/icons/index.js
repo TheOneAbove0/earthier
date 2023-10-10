@@ -20,11 +20,26 @@ import Revenue from './Revenue.svg';
 import Orders from './Orders.svg';
 import CreditCard01 from './creditCard.svg';
 import Visitor from './Visitor.svg';
+import Search from './search.svg';
+import ThreeDot from './ThreeDot.svg';
+import Left from './chevron-left-large.svg';
+import Right from './chevron-right-large.svg';
+import ArrowLeft from './ArrowLeft.svg';
+import Image from './Image.svg';
+import Close from './Close.svg';
+
 
 
 
 
 export {
+    Close,
+    Image,
+    ArrowLeft,
+    Right,
+    Left,
+    ThreeDot,
+    Search,
     Revenue,
     Orders,
     CreditCard01,

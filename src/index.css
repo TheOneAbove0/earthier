@@ -16,3 +16,8 @@ html, body{
 .tableBorder{
   border-bottom: 2px solid #DFE1E6
 }
+
+
+.Dashborder{
+  border: 1px dashed #2C2A2A;
+}
