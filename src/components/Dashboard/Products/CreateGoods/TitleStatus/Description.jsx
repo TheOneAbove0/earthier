@@ -1,11 +1,11 @@
 import React from "react";
-import { ChevronDown } from "../../../assets/icons";
+import { ChevronDown } from "../../../../assets/icons";
 import TagList from "./TagList";
 import Images from "./Images";
 
 export default function Description() {
   return (
-    <div className=" flex w-full h-full gap-4 ">
+    <div className=" flex w-full h-[699px] gap-4 ">
       <div className="   bg-white flex-grow rounded-2xl  ">
         <div className=" p-4  ">
           <div>
@@ -34,7 +34,7 @@ export default function Description() {
       </div>
 
       <div className=" flex flex-col gap-2 ">
-        <div className=" bg-white w-[440px] h-full rounded-2xl ">
+        <div className=" bg-white w-[440px] h-[669px] rounded-2xl ">
           <div className=" p-4 relative ">
             <img
               className=" absolute right-8 top-[60px] "
@@ -49,10 +49,10 @@ export default function Description() {
             </div>
             <div>
               <select className="w-[408px] text-xs leading-[16px] focus:outline-none mt-2 bg-LightGrey px-4 rounded-lg py-4 appearance-none">
-                <option className="p-2 m-2" value="Active">
+                <option  value="">
                   Active
                 </option>
-                <option className="p-2 m-2" value="Archived">
+                <option  value="">
                   Archived
                 </option>
               </select>

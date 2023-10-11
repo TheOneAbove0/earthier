@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CLoseButton} from "../../../assets/icons";
+import { CLoseButton} from "../../../../assets/icons";
 
 const initialTags = [
   'Green',

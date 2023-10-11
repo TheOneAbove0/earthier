@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Close, Image } from "../../../assets/icons/index";
+import { Close, Image } from "../../../../assets/icons/index";
 
 export default function Images() {
   const [image, setImage] = useState(null);

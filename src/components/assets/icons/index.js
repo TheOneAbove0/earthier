@@ -29,12 +29,16 @@ import Image from './Image.svg';
 import Close from './Close.svg';
 import ChevronDown from './ChevronDown.svg';
 import CLoseButton from './CLoseButton.svg';
+import PlusBlue from './PlusBlue.svg';
+import Edit from './Edit.svg';
 
 
 
 
 
 export {
+    Edit, 
+    PlusBlue,
     CLoseButton,
     ChevronDown,
     Close,
