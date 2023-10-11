@@ -27,12 +27,16 @@ import Right from './chevron-right-large.svg';
 import ArrowLeft from './ArrowLeft.svg';
 import Image from './Image.svg';
 import Close from './Close.svg';
+import ChevronDown from './ChevronDown.svg';
+import CLoseButton from './CLoseButton.svg';
 
 
 
 
 
 export {
+    CLoseButton,
+    ChevronDown,
     Close,
     Image,
     ArrowLeft,

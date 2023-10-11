@@ -6,7 +6,7 @@ import Categories from "./components/Dashboard/Categories/Categories";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CreateCategory from "./components/Dashboard/Categories/CreateCategory/CreateCategory";
 import Products from "./components/Dashboard/Products/Products";
-import CreateProducts from "./components/Dashboard/Products/CreateProducts/CreateProducts";
+import CreateProducts from "./components/Dashboard/Products/CreateGoods/CreateGoods";
 
 function App() {
   return (
