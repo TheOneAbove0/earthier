@@ -1,25 +1,44 @@
-import './App.css';
-// import HomePage from './components/Dashboard/HomePage/HomePage';
-import NavBar from './components/NavBar/NavBar';
-import SideBar from './components/SideBar/SideBar';
-import  Categories  from './components/Dashboard/Categories/Categories';
-import CreateCategory from './components/Dashboard/Categories/CreateCategory/CreateCategory';
+import "./App.css";
+import HomePage from "./components/Dashboard/HomePage/HomePage";
+import NavBar from "./components/NavBar/NavBar";
+import SideBar from "./components/SideBar/SideBar";
+import Categories from "./components/Dashboard/Categories/Categories";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CreateCategory from "./components/Dashboard/Categories/CreateCategory/CreateCategory";
+import Products from "./components/Dashboard/Products/Products";
+import CreateProducts from "./components/Dashboard/Products/CreateProducts/CreateProducts";
 
 function App() {
   return (
-    <div className="App">
-     <NavBar />
-     <div className=' flex  '>
-     <SideBar />
-     <div className='w-full pl-[210px] '> 
-     {/* <HomePage /> */}
-     {/* <Categories /> */}
-     <CreateCategory />
+    <div>
+      <NavBar />
+    <BrowserRouter>
+    <div className="flex">
+      <SideBar />
+          <div className=" w-full pl-[210px] ">
+      <Routes>
+        <Route >
+          <Route path="/homepage" element={<HomePage />} />
 
-     </div>
+          <Route path="/categories" >
+          <Route index element={<Categories />} />
+            <Route path="createcategory" element={<CreateCategory />} />
+          </Route>
 
-     </div>
+          <Route path="/products" >
+          <Route index element={<Products />} />
+            <Route path="createproducts" element={<CreateProducts />} />
+          </Route>
+
+        </Route>
+      </Routes>
+        </div>
     </div>
+  </BrowserRouter>
+  </div>
+  
+
+   
   );
 }
 

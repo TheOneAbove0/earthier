@@ -1,10 +1,10 @@
 import { Table } from "../../Common/Table/Table";
-import { ThreeDot } from "../../assets/icons";
+import { ThreeDot } from "../../assets/icons/index";
 import {Avatar } from "../../assets/image/index";
 import {TableData} from './TableData';
 
 export default function TableBody() {
-  const itemsPerPage = 12;
+  const itemsPerPage = 10;
 
  
   const columns = [
@@ -17,15 +17,15 @@ export default function TableBody() {
       className: "pl-2 text-start whitespace-nowrap pt-4 pb-2 w-[64px]",
     },
     {
-      header: "Category",
+      header: "Product",
       className: "pl-4 text-start whitespace-nowrap pt-4 pb-2 w-[70%]",
     },
     {
-      header: "Parent category",
+      header: "Status",
       className: "pl-2 text-start whitespace-nowrap pt-4 pb-2 w-[200px]",
     },
     {
-      header: "Products",
+      header: "Inventory",
       className: "pl-2 text-start pt-4 whitespace-nowrap pb-2 w-[200px]",
     },
     {
@@ -51,16 +51,16 @@ export default function TableBody() {
         <div className="gap-2 flex items-center">
           <img className=" w-6 h-6 object-contain" src={Avatar} alt="Avatar" />
           <span className=" text-[13px] leading-[18px] tracking-[-0.08px] ">
-            {item.Category}
+            {item.Product}
           </span>
         </div>
       </td>
 
       <td className="p-3 whitespace-nowrap w-[200px]">
-        <div className="text-xs leading-[16px]">{item.ParentCategory}</div>
+        <div className="text-xs leading-[16px]">{item.Status}</div>
       </td>
       <td className="py-3 whitespace-nowrap pl-2 w-[200px]">
-        <div className="text-xs leading-[16px]">{item.Products}</div>
+        <div className="text-xs leading-[16px]">{item.Inventory}</div>
       </td>
 
       <td className="pl-[28px] py-[10px]  whitespace-nowrap w-[56px]">

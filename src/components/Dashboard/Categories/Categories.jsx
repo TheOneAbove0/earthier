@@ -1,17 +1,25 @@
 import React from "react";
 import { Search } from "../../assets/icons";
 import TableBody from "./TableBody";
-import PageNumber from "./PaginationControls";
-import PaginationControls from "./PaginationControls";
+
+import { useNavigate } from "react-router-dom";
 
 export default function Categories() {
+  const navigate = useNavigate();
+
+  const handleCreateCategoryClick = () => {
+    navigate("/categories/createcategory");
+  };
   return (
     <div className=" bg-LightGrey  ">
       <div className=" flex items-center justify-between px-6 py-4  ">
         <div className=" font-bold text-[15px] leading-[20px] tracking-[-0.5px] ">
           Product Category
         </div>
-        <div className=" py-3 px-6 font-medium text-[13px] leading-[18.2px] text-white bg-BlueColor rounded-lg ">
+        <div
+          onClick={handleCreateCategoryClick}
+          className=" py-3 cursor-pointer px-6 font-medium text-[13px] leading-[18.2px] text-white bg-BlueColor rounded-lg "
+        >
           Create category
         </div>
       </div>
@@ -33,8 +41,6 @@ export default function Categories() {
         </div>
 
         <TableBody />
-
-        {/* <PaginationControls /> */}
       </div>
     </div>
   );

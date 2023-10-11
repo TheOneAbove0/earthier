@@ -5,10 +5,15 @@ export default function DragDrop() {
   const [image, setImage] = useState(null);
 
   const handleImageUpload = (event) => {
-    const uploadedImage = event.target.files[0];
-    if (uploadedImage) {
-      const imageName = uploadedImage.name;
-      setImage({ file: uploadedImage, name: imageName });
+    try {
+      const uploadedImage = event.target.files[0];
+      if (uploadedImage) {
+        const imageName = uploadedImage.name;
+        setImage({ file: uploadedImage, name: imageName });
+      }
+    } catch (error) {
+      console.error('Error uploading image:', error);
+      
     }
   };
 
@@ -21,11 +26,16 @@ export default function DragDrop() {
   };
 
   const handleDrop = (e) => {
-    e.preventDefault();
-    const droppedImage = e.dataTransfer.files[0];
-    if (droppedImage) {
-      const imageName = droppedImage.name;
-      setImage({ file: droppedImage, name: imageName });
+    try {
+      e.preventDefault();
+      const droppedImage = e.dataTransfer.files[0];
+      if (droppedImage) {
+        const imageName = droppedImage.name;
+        setImage({ file: droppedImage, name: imageName });
+      }
+    } catch (error) {
+      console.error('Error dropping image:', error);
+      
     }
   };
 
@@ -42,16 +52,16 @@ export default function DragDrop() {
             {image ? (
               <div className="relative">
                 <img
-                  className="w-[240px] px-[64px] pt-4 pb-2 object-fill h-[200px]"
+                  className="w-[240px] px-[64px] pt-4 pb-2 object-cover h-[200px]"
                   src={URL.createObjectURL(image.file)}
                   alt="uploaded"
                 />
               </div>
             ) : (
               <>
-                <img className="w-6 h-6" src={Image} alt="drop-down" />
+                <img className="w-6 mb-1 h-6" src={Image} alt="drop-down" />
                 <span className="text-[13px] leading-[18px] tracking-[-0.08px]">
-                  {image ? '' : 'Drag and drop or'}
+                  {!image && 'Drag and drop or' }
                 </span>
               </>
             )}
