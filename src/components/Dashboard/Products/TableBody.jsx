@@ -1,12 +1,11 @@
 import { Table } from "../../Common/Table/Table";
 import { ThreeDot } from "../../assets/icons/index";
-import {Avatar } from "../../assets/image/index";
-import {TableData} from './TableData';
+import { Avatar } from "../../assets/image/index";
+import { TableData } from "./TableData";
 
 export default function TableBody() {
   const itemsPerPage = 10;
 
- 
   const columns = [
     {
       header: <input className="w-4 h-4 rounded-[4px]" type="checkbox" />,
@@ -30,11 +29,11 @@ export default function TableBody() {
     },
     {
       header: "Action",
-      className: "pl-[11px] text-start pt-4 pr-2 whitespace-nowrap pb-2 w-[56px]",
+      className:
+        "pl-[11px] text-start pt-4 pr-2 whitespace-nowrap pb-2 w-[56px]",
     },
   ];
 
- 
   const renderRow = (item, index) => (
     <tr key={index}>
       <td className="px-6 whitespace-nowrap pt-4 pb-2 w-[64px]">
@@ -70,7 +69,6 @@ export default function TableBody() {
       </td>
     </tr>
   );
-
 
   const data = TableData;
 

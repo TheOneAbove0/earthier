@@ -1,7 +1,6 @@
 import React from "react";
 import TableData from "./TableData"; 
 import {ThreeDot} from "../../../../../assets/icons/index";
-import {Avatar} from "../../../../../assets/image/index";
 
 export function TableBody() {
   return (

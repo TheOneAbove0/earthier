@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CreateCategory from "./components/Dashboard/Categories/CreateCategory/CreateCategory";
 import Products from "./components/Dashboard/Products/Products";
 import CreateProducts from "./components/Dashboard/Products/CreateGoods/CreateGoods";
+import CreateServices from "./components/Dashboard/Products/CreateServices/CreateServices/CreateServices";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/products" >
           <Route index element={<Products />} />
             <Route path="createproducts" element={<CreateProducts />} />
+            <Route path="createservices" element={<CreateServices />} />  
           </Route>
 
         </Route>
