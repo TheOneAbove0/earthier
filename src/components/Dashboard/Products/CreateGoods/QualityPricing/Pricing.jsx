@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { PlusBlue } from "../../../../assets/icons";
 
-export default function Pricing() {
+export default function Pricing({DisplayHandler, display}) {
   const [isToggled, setIsToggled] = useState(true);
 
   const toggleButtonClasses = `relative w-[48px] h-[21px] rounded-full bg-opacity-10 bg-[#1274FF] ${
-    isToggled ? "bg-[#1274FF]" : "bg-gray-300"
+    isToggled ? "bg-[#1274FF]" : "bg-[#1274FF]"
   }`;
 
   return (
@@ -93,7 +93,7 @@ export default function Pricing() {
           <span className=" font-medium text-[13px] leading-[18.2px] ">Taxable</span>
         </div>
 
-        <div className=" flex gap-2 items-center cursor-pointer ">
+        <div onClick={() =>{DisplayHandler(true)}} className={` ${display === true? "hidden ":' flex'} flex gap-2 items-center cursor-pointer `}>
             <img src={PlusBlue} alt="PlusBlue" />
             <p className=" text-xs leading-[16px] text-BlueColor ">Add variants (options like size or color)</p>
         </div>

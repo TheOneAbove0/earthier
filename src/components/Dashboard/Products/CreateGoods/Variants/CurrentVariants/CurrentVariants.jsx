@@ -1,7 +1,8 @@
 import React from 'react'
+import {TableBody} from './TableBody'
 
 export default function CurrentVariants() {
   return (
-    <div>CurrentVariants</div>
+    <div><TableBody /></div>
   )
 }
