@@ -31,6 +31,13 @@ function App() {
             <Route path="createproducts" element={<CreateProducts />} />
             <Route path="createservices" element={<CreateServices />} />  
           </Route>
+          
+
+          {/* <Route path="/orders" >
+          <Route index element={<Products />} />
+            <Route path="createorders" element={<CreateOrders />} />
+            <Route path="createorders" element={<CreateOrders />} />  
+          </Route> */}
 
         </Route>
       </Routes>
