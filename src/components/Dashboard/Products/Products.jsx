@@ -129,6 +129,8 @@ export default function Products() {
             {active === "Goods" && <TableBody />}
             {active === "services" && <ServicesTable />}
           </div>
+
+          
         </div>
       </div>
     </div>

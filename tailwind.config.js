@@ -13,6 +13,11 @@ module.exports = {
         'Success' : '#24BE67',
         'Danger' : '#EF233C',
         "ButtonHover": "#1568DE",
+        "Warning":'#EBBB12',
+        "LightBlue": '#00A8E8',
+        "LGrey": '#0C3DB033',
+        "LGreen": '#24BE67',
+        'Black':'#2C2A2A',
 
 
       },
