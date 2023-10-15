@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PlusBlue } from "../../../../assets/icons";
+
 
 export default function Pricing({ DisplayHandler, display }) {
   const [isToggled, setIsToggled] = useState(true);

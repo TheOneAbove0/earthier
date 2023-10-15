@@ -121,7 +121,7 @@ export const TableData = [
         CustomerName:'Darlene Robertson',
         Quantity:4,
         PaymentMode:'COD',
-        PaymentStatus:600,
+        PaymentStatus:'Paid',
         Status:'Delivered',
         DeliveryPerson:'Kristin Watson',
         CreatedAT:'03/07/21   5:23am'
@@ -245,7 +245,7 @@ export const TableData = [
         CustomerName:'Darlene Robertson',
         Quantity:4,
         PaymentMode:'COD',
-        PaymentStatus:600,
+        PaymentStatus:'Paid',
         Status:'Delivered',
         DeliveryPerson:'Kristin Watson',
         CreatedAT:'03/07/21   5:23am'

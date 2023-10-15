@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Search } from "../../assets/icons";
-import { TableData } from "./TableData";
 
 import { useNavigate } from "react-router-dom";
 import TableBody from "./TableBody";

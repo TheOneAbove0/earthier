@@ -104,7 +104,7 @@ export default function TableBody() {
         <div className="text-xs leading-[16px]">{item.PaymentMode}</div>
       </td>
       <td className={`py-3 whitespace-nowrap pl-2 w-[106px]`}>
-        <div className={`text-xs w-fi rounded-[3px] px-2 leading-[16px] ${PaymentColors[item.PaymentStatus] || ''} `}>{item.PaymentStatus}</div>
+        <div className={`text-xs w-fit rounded-[3px] px-2 leading-[16px] ${PaymentColors[item.PaymentStatus] || ''} `}>{item.PaymentStatus}</div>
       </td>
       <td className={`py-3 whitespace-nowrap pl-2 w-[160px] `}>
         <div className={`text-xs px-2 w-fit rounded-[3px] leading-[16px] ${statusColors[item.Status] || ''}`}>{item.Status}</div>
