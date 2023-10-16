@@ -68,6 +68,7 @@ export default function FilterTableData() {
                 <option value="Cancelled">Cancelled</option>
                 <option value="Returned">Returned</option>
                 <option value="Return request">Return request</option>
+                <option value="Return request">Return collected</option>
               </select>
             </div>
 
