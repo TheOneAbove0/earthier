@@ -32,12 +32,16 @@ import CLoseButton from './CLoseButton.svg';
 import PlusBlue from './PlusBlue.svg';
 import Edit from './Edit.svg';
 import Calendar from './Calendar.svg';
+import Minus from './Minus.svg';
+import Plus from './Plus.svg';
 
 
 
 
 
 export {
+    Minus,
+    Plus,
     Calendar,
     Edit, 
     PlusBlue,
