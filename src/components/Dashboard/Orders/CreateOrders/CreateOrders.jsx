@@ -9,7 +9,7 @@ export default function CreateOrders() {
   const navigate = useNavigate();
 
   const handleCreateCategoryClick = () => {
-    navigate("/products");
+    navigate("/orders");
   };
   return (
     <div className=" px-14 py-4 bg-LightGrey ">

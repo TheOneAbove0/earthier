@@ -1,6 +1,6 @@
 import React from "react";
-import Products from "./Products";
-import CustomerDetails from "./CustomerDetails";
+import Products from "./Products/Products";
+import Details from "./DetailsPage/Details";
 
 export default function Main() {
   return (
@@ -9,7 +9,7 @@ export default function Main() {
         <Products />
       </div>
       <div className="  w-full ">
-        <CustomerDetails />
+        <Details />
       </div>
     </div>
   );

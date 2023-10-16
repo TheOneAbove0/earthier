@@ -3,6 +3,7 @@ import TableBody from "./TableBody";
 import { Calendar, Search } from "../../assets/icons";
 import { useNavigate } from "react-router-dom";
 import FilterTable from "./FilterTableData";
+import FilterTableData from "./FilterTableData";
 
 const tabs = [
   { label: "All", value: "All" },
@@ -95,8 +96,8 @@ export default function Orders() {
                 </div>
               </div>
             </div>
-            <FilterTable />
-            <TableBody />
+            <FilterTableData />
+            {/* <TableBody /> */}
           </div>
         </div>
       </div>
