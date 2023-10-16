@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TableBody from "./TableBody";
 import { Calendar, Search } from "../../assets/icons";
 import { useNavigate } from "react-router-dom";
-import FilterTable from "./CreateOrders/FilterTableData";
+import FilterTable from "./FilterTableData";
 
 const tabs = [
   { label: "All", value: "All" },

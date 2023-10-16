@@ -1,5 +1,5 @@
 import React from 'react'
-import { Calendar, ChevronDown } from '../../../assets/icons'
+import { Calendar, ChevronDown } from '../../assets/icons'
 
 export default function FilterTableData() {
   return (
