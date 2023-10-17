@@ -47,5 +47,8 @@ export const Size = [
     },
     {
         Size: 'M',
+    },
+    {
+        Size: 'S',
     }
 ]
