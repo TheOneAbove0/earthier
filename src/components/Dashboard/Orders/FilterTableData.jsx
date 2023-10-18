@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Calendar, Close } from "../../assets/icons";
 import TableBody from "./TableBody";
 
-export default function FilterTableData() {
+export default function FilterTableData({filterData}) {
   const [selectedStatus, setSelectedStatus] = useState([]);
   const [selectedPaymentStatus, setSelectedPaymentStatus] = useState([]);
   const [selectedDate, setSelectedDate] = useState("");
@@ -35,6 +35,7 @@ export default function FilterTableData() {
     <>
       <div className="px-6">
         <div className="flex flex-col gap-3 px-2">
+          {filterData  && (
           <div className="pt-4 flex items-center gap-4">
             <div className="flex gap-3 items-center px-4 py-[6px] rounded-[4px] bg-LightGrey">
               <select
@@ -83,6 +84,7 @@ export default function FilterTableData() {
               />
             </div>
           </div>
+          )}
 
           <div className="flex items-center gap-2 pb-2">
             {selectedStatus.map((status) => (

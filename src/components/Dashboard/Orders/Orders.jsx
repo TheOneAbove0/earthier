@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import TableBody from "./TableBody";
 import { Calendar, Search } from "../../assets/icons";
 import { useNavigate } from "react-router-dom";
-import FilterTable from "./FilterTableData";
 import FilterTableData from "./FilterTableData";
 
 const tabs = [
@@ -17,11 +15,15 @@ const tabs = [
 ];
 
 export default function Orders() {
+  const[filterData,setFilterData]=useState(false);
   const [activeItem, setActiveItem] = useState("All");
 
   const clickHandler2 = (item) => {
     setActiveItem(item);
   };
+  const handleFilterData=()=>{
+    setFilterData(!filterData);
+  }
 
   const navigate = useNavigate();
 
@@ -88,7 +90,7 @@ export default function Orders() {
                     alt="Search"
                   />
                 </div>
-                <div className=" flex items-center gap-2 bg-LightGrey rounded-full px-3 py-2 ">
+                <div onClick={handleFilterData} className=" cursor-pointer flex items-center gap-2 bg-LightGrey rounded-full px-3 py-2 ">
                   <img className="  " src={Calendar} alt="Calendar" />
                   <span className=" text-[13px] leading-[18.2px] font-medium ">
                     Filter
@@ -96,8 +98,8 @@ export default function Orders() {
                 </div>
               </div>
             </div>
-            <FilterTableData />
-            {/* <TableBody /> */}
+            <FilterTableData filterData={filterData} />
+            
           </div>
         </div>
       </div>

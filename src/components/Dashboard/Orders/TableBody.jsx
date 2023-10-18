@@ -20,12 +20,11 @@ export default function TableBody({
     return statusFilter && paymentStatusFilter && dateFilter;
   });
 
-
   const itemsPerPage = 12;
 
   return (
     <Table
-      TableData={filteredData}
+      data={filteredData}
       itemsPerPage={itemsPerPage}
       columns={columns}
       renderRow={renderRow}

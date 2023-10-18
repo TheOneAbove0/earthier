@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import PaginationControls from "../../Common/Table/PaginationControls/PaginationControls";
 
 
-export function Table({ TableData, itemsPerPage, columns, renderRow }) {
+export function Table({ data, itemsPerPage, columns, renderRow }) {
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
-  const currentTableData = TableData.slice(startIndex, endIndex);
+  const currentTableData = data.slice(startIndex, endIndex);
 
-  const totalPages = Math.ceil(TableData.length / itemsPerPage);
+  const totalPages = Math.ceil(data.length / itemsPerPage);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
