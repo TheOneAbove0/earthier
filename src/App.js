@@ -10,6 +10,8 @@ import CreateProducts from "./components/Dashboard/Products/CreateGoods/CreateGo
 import CreateServices from "./components/Dashboard/Products/CreateServices/CreateServices/CreateServices";
 import Orders from "./components/Dashboard/Orders/Orders";
 import CreateOrders from "./components/Dashboard/Orders/CreateOrders/CreateOrders";
+import Users from "./components/Dashboard/Users/Users";
+import CreateRole from "./components/Dashboard/Users/CreateRole/CreateRole";
 
 function App() {
   return (
@@ -38,7 +40,11 @@ function App() {
           <Route path="/orders" >
           <Route index element={<Orders />} />
             <Route path="createorders" element={<CreateOrders />} />
-            {/* <Route path="createorders" element={<CreateOrders />} />   */}
+          </Route>
+          
+          <Route path="/users" >
+          <Route index element={<Users />} />
+            <Route path="createroles" element={<CreateRole />} />
           </Route>
 
         </Route>

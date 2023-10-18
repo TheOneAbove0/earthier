@@ -1,5 +1,5 @@
-import { Avatar } from "../../../assets/image";
-import { ThreeDot } from "../../../assets/icons";
+import { Avatar } from "../../../assets/image/index";
+import { ThreeDot } from "../../../assets/icons/index";
 
 export const TableData = [
   {

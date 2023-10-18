@@ -34,12 +34,16 @@ import Edit from './Edit.svg';
 import Calendar from './Calendar.svg';
 import Minus from './Minus.svg';
 import Plus from './Plus.svg';
+import searchBlue from './searchBlue.svg';
+import chevrondown from './chevron-down.svg'; 
 
 
 
 
 
 export {
+    chevrondown,
+    searchBlue,
     Minus,
     Plus,
     Calendar,
