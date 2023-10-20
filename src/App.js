@@ -12,6 +12,8 @@ import Orders from "./components/Dashboard/Orders/Orders";
 import CreateOrders from "./components/Dashboard/Orders/CreateOrders/CreateOrders";
 import Users from "./components/Dashboard/Users/Users";
 import CreateRole from "./components/Dashboard/Users/CreateRole/CreateRole";
+import Ads from "./components/Dashboard/Ads/Ads";
+import CreateAds from "./components/Dashboard/Ads/CreateAds/CreateAds";
 
 function App() {
   return (
@@ -45,6 +47,11 @@ function App() {
           <Route path="/users" >
           <Route index element={<Users />} />
             <Route path="createroles" element={<CreateRole />} />
+          </Route>
+
+          <Route path="/Ads" >
+          <Route index element={<Ads/>} />
+            <Route path="Createads" element={<CreateAds />} />
           </Route>
 
         </Route>
