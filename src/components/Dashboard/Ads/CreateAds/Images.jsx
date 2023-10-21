@@ -101,7 +101,7 @@ export default function Images() {
                 className="hidden"
                 onChange={handleImageUpload}
               />
-            </div>
+            </div> 
           </div>
         </div>
         </div>
