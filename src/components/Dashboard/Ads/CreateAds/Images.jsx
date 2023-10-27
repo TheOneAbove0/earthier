@@ -13,7 +13,7 @@ export default function Images() {
         setImage({ file: uploadedImage, name: imageName });
       }
     } catch (error) {
-      console.error("Error uploading image:", error);
+      console.error("Error uploading image:", error); 
     }
   };
 
