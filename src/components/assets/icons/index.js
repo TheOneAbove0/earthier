@@ -36,12 +36,14 @@ import Minus from './Minus.svg';
 import Plus from './Plus.svg';
 import searchBlue from './searchBlue.svg';
 import chevrondown from './chevron-down.svg'; 
+import HomeMain from './HomeMain.svg';
 
 
 
 
 
 export {
+    HomeMain,
     chevrondown,
     searchBlue,
     Minus,

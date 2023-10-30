@@ -25,7 +25,7 @@ function App() {
           <div className=" w-full pl-[210px] ">
       <Routes>
         <Route >
-          <Route path="/homepage" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
 
           <Route path="/categories" >
           <Route index element={<Categories />} />
