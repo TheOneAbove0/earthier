@@ -10,7 +10,7 @@ export default function CreateAds() {
     navigate("/users");
   };
   return (
-    <div className=" px-16 py-4 bg-LightGrey ">
+    <div className=" px-16 py-4 bg-LightGrey  h-[90vh]">
       <div className=" flex item-center justify-between  ">
         <div className=" flex items-center gap-2 ">
           <img

@@ -39,9 +39,10 @@ export default function Images() {
   };
 
   return (
-    <div className=" w-[776px] bg-white pb-4 gap-2  ">
-      <div className="flex  gap-2  ">
-        <div className="w-[50%]">
+    <div className=" w-full rounded-2xl bg-white pb-4 gap-2 px-4 ">
+      <div className=" text-[15px] leading-[20px] font-medium  pt-4 ">Image <span className=" text-Danger ">*</span></div>
+      <div className="flex  gap-2   pt-4 ">
+        <div className="w-[240px]">
           {/* Left side image */}
           {image && (
             <div className="">
@@ -73,7 +74,7 @@ export default function Images() {
         </div>
 
         <div
-          className="w-[50%] h-[153px]  rounded-2xl"
+          className="w-[240px] h-[153px]  rounded-2xl"
           onDragOver={handleDragOver}
           onDrop={handleDrop}
         >
@@ -106,7 +107,7 @@ export default function Images() {
         </div>
         </div>
 
-        <div className=" flex flex-col gap-2 ">
+        <div className=" flex flex-col gap-2 pt-4 ">
           <div className=" text-xs leading-[16px] ">
             Title{" "}
             <span className=" text-Danger text-[11px] leading-[13px] tracking-[0.07px] ">
@@ -114,31 +115,31 @@ export default function Images() {
             </span>
           </div>
           <input
-            className=" w-full rounded-lg p-4 text-xs leading-[16px]"
+            className=" w-full rounded-lg bg-LightGrey p-4 text-xs leading-[16px]"
             type="text"
             placeholder="E.g. Laptop, Summer collection"
           />
         </div>
 
-        <div>
+        <div className=" pt-4  ">
             <div className=" text-xs leading-[16px] ">Link to</div>
-            <div className=" flex gap-4 items-center ">
-                <div className=" flex gap-2 items-center p-8 pr-0 ">
-                    <input type="checkbox" className=" w-4 h-4 " />
+            <div className=" flex gap-4 items-center pt-2 ">
+                <div className=" flex gap-2 items-center p-2 pr-0 ">
+                    <input type="radio" className=" w-4 h-4 " />
                     <div className=" text-xs leading-[16px] ">Specific category</div>
                 </div>
-                <div className=" flex gap-2 items-center p-8 pr-0 ">
-                    <input type="checkbox" className=" w-4 h-4 " />
+                <div className=" flex gap-2 items-center p-2 pr-0 ">
+                    <input type="radio" className=" w-4 h-4 " />
                     <div className=" text-xs leading-[16px] ">Specific product</div>
                 </div>
             </div>
-            <div className=" flex gap-2 w-full ">
+            <div className=" flex gap-2 w-full pt-4 ">
                 <div className=" px-4 py-[14px] flex w-full bg-LightGrey  ">
-                    <input  type="text" placeholder="Search category"/>
-                    <img src={Search} alt="Search" />
+                    <input  className=" w-full  bg-LightGrey focus outline-none " type="text" placeholder="Search category"/>
+                    <img className="  " src={Search} alt="Search" />
 
                 </div>
-                <div className=" text-[11px] leading-[13px] tracking-[0.07px] px-8 py-[17.5px] rounded-lg border ">
+                <div className=" text-[11px] border-Tertiary leading-[13px] tracking-[0.07px] px-8 py-[17.5px] rounded-lg border ">
                 Browse
                 </div>
             </div>
