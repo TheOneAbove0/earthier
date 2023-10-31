@@ -13,7 +13,7 @@ export const SidebarData = [
   },
 
   {
-    title: "Products",
+    title: "Products", 
     icon: Products,
     ClickIcon: Home,
   },
